@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Alegreya Sans SC';
 }
 
 .nav {
@@ -35,6 +36,8 @@ a {
   font-family: Georgia;
   padding: 1em;
   z-index: 1000;
+
+  color: red;
 }
 
 .container {
@@ -57,4 +60,35 @@ a {
 
 img {
   margin-bottom: 4em;
+  height: 100%;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.me {
+  
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: red;
+  border-radius: 20%;
+  border: 4px solid red;
+
+
+  width: 80rem;
+  height: 40rem;
+}
+
+.mee {
+  text-transform: uppercase;
 }
