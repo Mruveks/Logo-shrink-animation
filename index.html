@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 </head>
 <body>
@@ -26,8 +26,27 @@
     <h1 class="logo">MESMATEC</h1>
   </div>
 
+  <div class="container"></div>
+
   <div class="content">
     <img src="hero.png" alt="" />
   </div>
+
+  <script>
+
+      ScrollTrigger.create({
+        animation: gsap.from(".logo", {
+          y: "50vh",
+          scale: 6,
+          yPercent: -50,
+        }),
+        scrub: true,
+        trigger: ".content",
+        start: "top bottom",
+        endTriggerP: ".content",
+        end: "top center",
+      });
+
+  </script>
 </body>
 </html>
